@@ -13,22 +13,22 @@ VALUES 	('10001','Pablo Picasso','+34 636 17 63 82','-','Paseo de la Chopera 14'
 
       
   INSERT INTO Salesperson (staff_ID, name, store)
-VALUES (00001,	"Petey Cruiser", "Madrid"),
-(00002,	"Anna Sthesia", "Barcelona"),
-(00003,	"Paul Molive", "Berlin"),
-(00004,	"Gail Forcewind", "Paris"),
-(00005,	"Paige Turner",	"Miami"),
-(00006,	"Bob Frapples",	"Mexico City"),
-(00007,	"Walter Melon",	"Amsterdam"),
-(00008,	"Shonda Leer",	"São Paulo");  
+VALUES ('00001',	"Petey Cruiser", "Madrid"),
+('00002',"Anna Sthesia", "Barcelona"),
+('00003',"Paul Molive", "Berlin"),
+('00004',"Gail Forcewind", "Paris"),
+('00005',"Paige Turner","Miami"),
+('00006',"Bob Frapples","Mexico City"),
+('00007',"Walter Melon","Amsterdam"),
+('00008',"Shonda Leer",	"São Paulo");  
 
 
-INSERT INTO Invoices (invoice_number, date,	car, customer,	salesperson)
-VALUES (852399038, '2018-08-22',	1,	1,	3),
-(731166526,	'2018-12-31',3,	3,	5),
-(271135104, '2019-01-22',2,	2,	7);
+INSERT INTO Invoices (invoice_number, date,	VIN, customer_ID, staff_ID)
+VALUES ('852399038', '2018-08-22','ZM8G7BEUQZ97IH46V','10001', '00001'),
+('731166526','2018-12-31','HKNDGS7CU31E9Z7JW','20001','00002'),
+('271135104', '2019-01-22','DAM41UDN3CHU2WVF6','30001','00003');
 
-SELECT * FROM cars;
+SELECT * FROM Cars;
 SELECT * FROM customers;
 SELECT * FROM salesperson;
 SELECT * FROM invoices;
